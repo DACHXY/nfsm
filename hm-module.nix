@@ -51,6 +51,8 @@ in
         Environment = [
           "NFSM_SOCKET=${cfg.socketPath}"
         ];
+        Restart = "always";
+        RestartSec = "5s";
       };
     };
 
